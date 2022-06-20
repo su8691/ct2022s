@@ -15,14 +15,16 @@
 			font-family: 'ct2022_2'; /* 改成自己的 Simple & Medium Baseline 字型檔 */
   			font-weight: 900;
 		}
+		@font-face {
+		font-family: ct2022_2;
+		src: url(109598100.ttf);
+		}
 		.poems {
-			font-family: 'cjkFonts 全瀨體'; /* Strong Baseline 字型檔 */
+		font-family: StrongFont, ct2022_2;
 		}
 		@font-face {
-			font-family: MyHelvetica;
-			src: local("ct2022_2"), url(109598100.ttf); /* 改成自己的 Simple & Medium Baseline 字型檔 */
-			src: local("StrongFont"), url(StrongFont.ttf); /* Strong Baseline 字型檔 */
-			font-weight: bold;
+		font-family: StrongFont;
+		src: url(https://github.com/Circle472/ct2022s/raw/main/hw04/StrongFont.ttf);
 		}
 		a:visited { color: #0000EE; }
 		a:hover { color: #FF5151; }
